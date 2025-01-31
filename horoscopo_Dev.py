@@ -23,7 +23,7 @@ Acciones_tech = [
     "hacer pull requests",
     "resolver conflictos de merge",
 	"centrar un div",
-    "instalar arch Linux manualmente"
+    "instalar Arch Linux manualmente"
 ]
 
 eventos_cosmicos = [
@@ -47,7 +47,7 @@ consejos = [
     "actualiza tus dependencias… pero con cuidado",
     "no hagas commits en viernes",
     "no ignores las advertencias del linter"
-    "instala arch Linux manualmente y díselo a todo mundo."
+    "instala Arch Linux manualmente y díselo a todo mundo."
 ]
 
 def generar_horoscopo():
