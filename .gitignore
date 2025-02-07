@@ -1,4 +1,16 @@
+# Ignorar el entorno virtual
+env/
 venv/
+
+# Archivos de caché de Python
 __pycache__/
 *.pyc
 *.pyo
+
+# Archivos de configuración de editores de texto
+.vscode/
+.idea/
+*.swp
+
+# Archivos de logs o temporales
+*.log
