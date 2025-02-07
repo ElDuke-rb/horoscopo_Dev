@@ -49,7 +49,7 @@ consejos = [
     "instala Arch Linux manualmente y díselo a todo mundo."
 ]
 
-
+# Función para crear lista de los signos;
 def lista_signos():
     for i in range(0, 12, 2):
         num1 = f"{i+1}. ==> ".ljust(3)
@@ -62,7 +62,7 @@ def lista_signos():
 
     return list_signos
 
-
+# Función que imprime un menú con todos los signos y capta la elección de usuario.
 def menu_signos():
     print ("\n ---* ¿De qué signo eres? 🤔 +--- \n")
     lista_signos()
