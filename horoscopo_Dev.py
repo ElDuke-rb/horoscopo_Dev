@@ -40,8 +40,8 @@ eventos_cosmicos = [
 consejos = [
     "haz backup de tu código",
     "revisa dos veces antes de hacer deploy",
-    "es hora de aprender python",
-    "es momento de aprender ruby",
+    "es hora de aprender Python",
+    "es momento de aprender Ruby",
     "documenta tu código, aunque sea con memes",
     "prueba tu código fuera de producción",
     "actualiza tus dependencias… pero con cuidado",
