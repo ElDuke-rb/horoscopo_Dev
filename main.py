@@ -66,8 +66,8 @@ def lista_signos():
 def menu_signos():
     print ("\n ---* ¿De qué signo eres? 🤔 +--- \n")
     lista_signos()
-    num = int(input("\n Escribe el número: "))
-    return num
+    num_signo_usuario = int(input("\n Escribe el número: "))
+    return num_signo_usuario
 
 
 def generar_horoscopo():
