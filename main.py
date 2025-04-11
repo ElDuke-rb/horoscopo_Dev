@@ -45,7 +45,7 @@ consejos = [
     "prueba tu código fuera de producción",
     "actualiza tus dependencias… pero con cuidado",
     "no hagas commits en viernes",
-    "no ignores las advertencias del linter"
+    "no ignores las advertencias del linter",
     "instala Arch Linux manualmente y díselo a todo mundo."
 ]
 
@@ -58,17 +58,21 @@ def lista_signos():
         num2 = f"{i+2}. ==> ".ljust(3)
         columna2 = f"{num2} {signos[i+1]}"
 
-        list_signos = print (f"{columna1} {columna2}")
-
-    return list_signos
+        print(f"{columna1} {columna2}")
 
 # Función que imprime un menú con todos los signos y capta la elección de usuario.
 def menu_signos():
-    print ("\n ---* ¿De qué signo eres? 🤔 +--- \n")
+    print("\n ---* ¿De qué signo eres? 🤔 *--- \n")
     lista_signos()
-    num_signo_usuario = int(input("\n Escribe el número: "))
-    return num_signo_usuario
-
+    while True:
+        try:
+            num_signo_usuario = int(input("\n Escribe el número: "))
+            if 1 <= num_signo_usuario <= 12:
+                return num_signo_usuario
+            else:
+                print("Por favor, elige un número entre 1 y 12.")
+        except ValueError:
+            print("Entrada inválida. Por favor, escribe un número.")
 
 def generar_horoscopo():
     signo = signos[menu_signos() - 1]
@@ -88,6 +92,7 @@ Consejo del día: {consejo.capitalize()}.
 
 Nivel de debugging requerido: {'🐛' * random.randint(1, 5)}
 Compatibilidad con: {random.choice(tecnologias)}
+
 """
     return horoscopo
 
